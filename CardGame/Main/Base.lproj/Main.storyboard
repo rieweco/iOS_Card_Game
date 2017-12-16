@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TXC-8e-eIc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainViewController-->
+        <scene sceneID="nFe-46-6sN">
+            <objects>
+                <viewController title="MainViewController" id="TXC-8e-eIc" customClass="MainViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ftN-PF-KD1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eby-QA-FMl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="rgc-Tc-6Gz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="323.5"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="dle-rp-doE" userLabel="stars">
+                                        <rect key="frame" x="0.0" y="323.5" width="375" height="323.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqj-k9-hBl">
+                                <rect key="frame" x="20" y="527" width="335" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pl-qp-l3K">
+                                        <rect key="frame" x="10" y="10" width="315" height="100"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <state key="normal" title="LAUNCH">
+                                            <color key="titleColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LanuchButtonPressed:" destination="TXC-8e-eIc" eventType="touchUpInside" id="JfB-OO-cbZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1pl-qp-l3K" secondAttribute="bottom" constant="10" id="02Q-qp-J6f"/>
+                                    <constraint firstItem="1pl-qp-l3K" firstAttribute="leading" secondItem="bqj-k9-hBl" secondAttribute="leading" constant="10" id="Bpo-9S-DYk"/>
+                                    <constraint firstItem="1pl-qp-l3K" firstAttribute="top" secondItem="bqj-k9-hBl" secondAttribute="top" constant="10" id="IKh-Lu-2fQ"/>
+                                    <constraint firstAttribute="height" constant="120" id="ZI4-V7-Xhh"/>
+                                    <constraint firstAttribute="trailing" secondItem="1pl-qp-l3K" secondAttribute="trailing" constant="10" id="a1R-3B-MJh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eby-QA-FMl" firstAttribute="leading" secondItem="SO4-bN-AQo" secondAttribute="leading" id="77n-qy-bdY"/>
+                            <constraint firstAttribute="trailing" secondItem="eby-QA-FMl" secondAttribute="trailing" id="DG7-av-lhI"/>
+                            <constraint firstItem="SO4-bN-AQo" firstAttribute="trailing" secondItem="bqj-k9-hBl" secondAttribute="trailing" constant="20" id="X9L-2Y-tPq"/>
+                            <constraint firstItem="bqj-k9-hBl" firstAttribute="leading" secondItem="SO4-bN-AQo" secondAttribute="leading" constant="20" id="cgs-cr-AU2"/>
+                            <constraint firstAttribute="bottom" secondItem="eby-QA-FMl" secondAttribute="bottom" id="vmv-Pg-sJs"/>
+                            <constraint firstItem="eby-QA-FMl" firstAttribute="top" secondItem="SO4-bN-AQo" secondAttribute="top" id="x8O-W0-LpD"/>
+                            <constraint firstItem="SO4-bN-AQo" firstAttribute="bottom" secondItem="bqj-k9-hBl" secondAttribute="bottom" constant="20" id="x96-zF-LBr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SO4-bN-AQo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w4J-PG-sph"/>
+                    <connections>
+                        <segue destination="l5b-Rz-mfs" kind="presentation" identifier="LoginSegue" id="DYD-95-L6n"/>
+                        <segue destination="5Yq-sg-fx9" kind="presentation" identifier="UserListSegue" id="OLG-Mm-e0V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9r-js-ooC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="-15"/>
+        </scene>
+        <!--LoginStoryboard-->
+        <scene sceneID="WG8-mE-PPY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginStoryboard" id="l5b-Rz-mfs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihh-Vc-ila" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384" y="-224"/>
+        </scene>
+        <!--UserList-->
+        <scene sceneID="ll0-KE-KQT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserList" id="5Yq-sg-fx9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kz-G5-Qr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stars" width="800" height="600"/>
+        <image name="title" width="600" height="400"/>
+    </resources>
+</document>
